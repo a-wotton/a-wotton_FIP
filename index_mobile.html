@@ -2,75 +2,91 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Pet Project Homepage</title>
 <link href="css/main-mobile.css" rel="stylesheet" type="text/css">
+<script src="https://kit.fontawesome.com/596fc36f7e.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<!-- students must convert divs to semantic tags -->
 <body>
 	<div id="container">
         
         <div id="header-con">
-            <div id="main-header" class="grid-con">
-                <img src="https://via.placeholder.com/186x80" alt="image" id="header-logo">
-                 <div id="mobile-nav">
+            <header id="main-header" class="grid-con">
+                <a href="index_mobile.html"><img src="img/logo.svg" alt="pet project logo" id="header-logo"></a>
+                 <nav id="mobile-nav">
                     <span class="burger"></span>
                     <span class="burger"></span>
                     <span class="burger"></span>
-                 </div>
-            </div>    
+                 </nav>
+            </header>    
         </div> 
 
         <main>
-            <div id="hero-con">
+            <section id="hero-con">
                 <div class="grid-con">
-                    <div id="hero-text" class="box-color">
-                    </div>
+                    <h1 class="subtitle">Welcome to Pet Project!</h1>
                 </div>
-            </div>
+            </section>
 
-            <div id="image-slider-con">
-                <h2>Blandit At Tuctor</h2>
+            <section id="image-slider-con">
+                <h2 class="subtitle">Featured Pets</h2>
                 <img src="https://via.placeholder.com/428x240" alt="image">
                 <!-- ascii symbols for <> -->
                 <span id="mobile-slider-left">&#60</span>
                 <span id="mobile-slider-right">&#62</span>
-            </div>
+            </section>
 
             <div id="about-us-con">
-                <h2>Blandit At Tuctor</h2>   
-                    <div id="about-us-text-con">     
+                <h2 class="subtitle">About the Pets</h2>   
+                    <section id="about-us-text-con">     
                         <div class="grid-con">
-                            <div id="about-us-text" class="box-color">
-                            </div>
-                        </div>      
+                            <ul id="about-us-text">
+                                <li>Dolly<span>is a French Bulldog who joined the household during the summer of 2022, making her the newest addition to the family. The colour of her fur is fawn; light brown with a darker face. Dolly's mother is Daisy, who is our other French Bulldog. Dolly was part of Daisy's second litter of puppies.</span></li>
+                                <li>Daisy<span>is our other French Bulldog, and she has a blue-grey fur. She is several years older than Dolly, and has had two litters of puppies, one in 2021, and another in 2022.</span></li>
+                                <li>Percy<span>Percy is our Great Dane, his fur is harlequin, which is white with black and grey spots, similar to a Dalmatian. He has been in the family for the longest, ever since 20XX.</span></li>
+                                <li>Maggie<span>Maggie is our Calico cat, with white fur and spots of brown, grey and black. </span></li>
+                            </ul>
+                        </div>
+                        </section>      
                     </div>  
                     <div class="grid-con" id="about-us-photos">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
+                        <img src="img/dolly_profile.png" alt="headshot of dolly" class="about-us-photo">
+                        <img src="img/daisy_red_toy.png" alt="headshot of daisy" class="about-us-photo">
+                        <img src="img/percy_profile.png" alt="headshot of percy" class="about-us-photo">
+                        <img src="img/maggie_profile.png" alt="headshot of maggie" class="about-us-photo">
                     </div>         
-            </div>
 
-            <div id="contact-us-con">
+            <section id="contact-us-con">
                 <div class="grid-con">
-                    <div id="contact-text" class="box-color">
-                    </div>
-                    <div id="contact-form" class="box-color">
-                    </div>
+                    <article id="contact-text">
+                        <h2 class="subtitle-02">Contact</h2>
+                        <p>Here you can contact me to provide any suggestions or report any issues that you may encounter.</p>
+                    </article>
+                    <form id="contact-form" action="#">
+                        <input placeholder="First Name" type="text">
+                        <input placeholder="Last Name" type="text">
+                        <input placeholder="Email" type="email">
+                        <textarea placeholder="Message" name="message" cols="30" rows="10"></textarea>
+                        <input id="submit" type="submit">
+                    </form>
                 </div>
-            </div>
+            </section>
         </main>
 
-        <div id="footer-con">
-            <div class="grid-con">
-                <div id="footer-box">
+        <footer id="footer-con">
+            <img src="img/logo.svg" alt="pet project logo">
                 </div>
                 <div id="footer-newsletter">
                 </div>
             </div>
-        </div>
+        </footer>
 
     </div>
+</div>
 </body>
 </html>

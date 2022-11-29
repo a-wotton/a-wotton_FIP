@@ -28,8 +28,10 @@ img {
 /*html selectors*/
 
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 12px;
+	color: #58595B;
+	background-color: #000;
 }
 
 /* Remove underlines from links */
@@ -55,6 +57,7 @@ you work on and the intended audience, we may go as low as 320px */
 #container {
 	margin: 0 auto;
 	width: 428px;
+	background-color: #FFF;
 }
 
 /* this is our grid based off of our XD file */
@@ -67,13 +70,14 @@ you work on and the intended audience, we may go as low as 320px */
 }
 
 #header-con {
-	background-color: #ddd;
+	background-color: #cae1fe;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
 #header-logo {
 	grid-column: 1/3;
+	height: 100px;
 }
 
 #mobile-nav {
@@ -82,24 +86,39 @@ you work on and the intended audience, we may go as low as 320px */
 
 .burger {
 	height: 16px;
-	background-color:#aaa;
+	background-color:#81A8D9;
 	display: block;
 	margin-bottom: 10px;
+
+	transition: all ease 0.5s;
 }
+
 
 /* index page */
 
 #hero-con {
 	background-color: #aaaaaa;
-	background: url("https://via.placeholder.com/428x458");
+	background: url("../img/dolly_daisy_bone_mobile.jpg");
 	height: 458px;
 }
 
-#hero-text {
+.subtitle {
+	font-size: 28px;
+	font-weight: bold;
+	background-color: #ffffff;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	margin: 0;
+}
+
+#hero-con .subtitle {
+	background-color: #DEB691;
 	grid-column: 1/-1;
-	/* Remove as content will dictate height */
-	height: 380px;
 	margin-top: 20px;
+	text-align: center;
+	border-radius: 15px;
+
 }
 
 #image-slider-con {
@@ -121,7 +140,7 @@ you work on and the intended audience, we may go as low as 320px */
 	position: absolute;
 	left: 0;
 	font-size: 120px;
-	color:#fff;
+	color:#DEB691;
 	top: 200px;
 }
 
@@ -129,16 +148,8 @@ you work on and the intended audience, we may go as low as 320px */
 	position: absolute;
 	right: 0;
 	font-size: 120px;
-	color:#fff;
+	color:#DEB691;
 	top: 200px;
-}
-
-#about-us-con h2 {
-	background-color: #ffffff;
-	text-align: center;
-	padding-top: 70px;
-	padding-bottom: 70px;
-	margin: 0;
 }
 
 #about-us-text-con {
@@ -147,10 +158,27 @@ you work on and the intended audience, we may go as low as 320px */
 
 #about-us-text {
 	grid-column: 1/-1;
-	/* Remove as content will dictate height */
-	height: 580px;
-	margin-top: 70px;
-	margin-bottom: 40px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+#about-us-text {
+	padding: 0;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#about-us-text li {
+	font-size: 18px;
+	font-weight: bold;
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+#about-us-text span {
+	font-weight: normal;
+	font-size: 14px;
+	margin-left: 5px;
 }
 
 .about-us-photo {
@@ -160,28 +188,72 @@ you work on and the intended audience, we may go as low as 320px */
 }
 
 #contact-us-con {
-	margin-top: 100px;
+	margin-top: 100px; 
 	margin-bottom: 60px;
+}
+
+.subtitle-02 {
+	font-size: 28px;
+	font-weight: bold;
 }
 
 #contact-text {
 	grid-column: 1/-1;
-	/* Remove as content will dictate height */
-	height: 350px;
-	margin-bottom: 150px;
+}
+
+#contact-text p {
+	font-size: 18px;
+	margin-bottom: 50px;
 }
 
 #contact-form {
 	grid-column: 1/-1;
-	/* Remove as content will dictate height */
-	height: 580px;
+	background-color: #58595B;
+	display: flex;
+	flex-direction: column;
+	padding: 40px 20px;
+	border-radius: 30px;
 }
+
+#contact-form input, textarea {
+	font-family: inherit;
+	font-size: 20px;
+	display: block;
+	margin: 10px;
+	height: 45px;
+	border-radius: 10px;
+	padding-left: 20px;
+	color: #58595B;
+}
+
+#contact-form textarea {
+	height: 190px;
+	padding: 20px;
+}
+
+#contact-form input[type="submit"] {
+	background-color: #DEB691;
+	color: #fff;
+	width: 175px;
+	height: 50px;
+	padding: 0;
+}
+
+#contact-form input[type="submit"]:hover {
+	cursor: pointer	;	
+}
+
 
 /*Common page elements  */
 
 #footer-con {
 	height: 410px;
-	background-color: #aaa;
+	background-color: #cae1fe;
+}
+
+#footer-con img {
+	height: 150px;
+	margin: 25px;
 }
 
 #footer-box {
