@@ -15,16 +15,17 @@
 <body>
 	<div id="container">
         
-        <div id="header-con">
-            <header id="main-header" class="grid-con">
+        <header id="header-con">
+            <div id="main-header" class="grid-con">
                 <a href="index_mobile.html"><img src="img/logo.svg" alt="pet project logo" id="header-logo"></a>
                  <nav id="mobile-nav">
+                <h2 class="hidden">Upper Navigation</h2>
                     <span class="burger"></span>
                     <span class="burger"></span>
                     <span class="burger"></span>
                  </nav>
-            </header>    
-        </div> 
+                </div>    
+        </header> 
 
         <main>
             <section id="hero-con">
@@ -35,7 +36,7 @@
 
             <section id="image-slider-con">
                 <h2 class="subtitle">Featured Pets</h2>
-                <img src="https://via.placeholder.com/428x240" alt="image">
+                <img src="img/dolly_turn_mobile.jpg" alt="dolly sitting and looking over her shoulder">
                 <!-- ascii symbols for <> -->
                 <span id="mobile-slider-left">&#60</span>
                 <span id="mobile-slider-right">&#62</span>
@@ -43,13 +44,14 @@
 
             <div id="about-us-con">
                 <h2 class="subtitle">About the Pets</h2>   
-                    <section id="about-us-text-con">     
+                    <section id="about-us-text-con"> 
+                        <h2 class="hidden">About Container</h2>    
                         <div class="grid-con">
                             <ul id="about-us-text">
                                 <li>Dolly<span>is a French Bulldog who joined the household during the summer of 2022, making her the newest addition to the family. The colour of her fur is fawn; light brown with a darker face. Dolly's mother is Daisy, who is our other French Bulldog. Dolly was part of Daisy's second litter of puppies.</span></li>
-                                <li>Daisy<span>is our other French Bulldog, and she has a blue-grey fur. She is several years older than Dolly, and has had two litters of puppies, one in 2021, and another in 2022.</span></li>
-                                <li>Percy<span>Percy is our Great Dane, his fur is harlequin, which is white with black and grey spots, similar to a Dalmatian. He has been in the family for the longest, ever since 20XX.</span></li>
-                                <li>Maggie<span>Maggie is our Calico cat, with white fur and spots of brown, grey and black. </span></li>
+                                <li>Daisy<span>is our other French Bulldog, and she has a blue-grey fur. She is around 4 years older than Dolly, and has had two litters of puppies, one in 2021, and another in 2022.</span></li>
+                                <li>Percy<span>is our Great Dane, his fur is harlequin, which is white with black and grey spots, similar to a Dalmatian. He has been in the family for the longest, ever since 2014.</span></li>
+                                <li>Maggie<span>is our Calico cat, with white fur and spots of brown, grey and black. Maggie became a member of the family back in 2015.</span></li>
                             </ul>
                         </div>
                         </section>      
@@ -61,7 +63,7 @@
                         <img src="img/maggie_profile.png" alt="headshot of maggie" class="about-us-photo">
                     </div>         
 
-            <section id="contact-us-con">
+            <div id="contact-us-con">
                 <div class="grid-con">
                     <article id="contact-text">
                         <h2 class="subtitle-02">Contact</h2>
@@ -75,18 +77,20 @@
                         <input id="submit" type="submit">
                     </form>
                 </div>
-            </section>
+            </div>
         </main>
 
-        <footer id="footer-con">
-            <img src="img/logo.svg" alt="pet project logo">
-                </div>
-                <div id="footer-newsletter">
-                </div>
-            </div>
+        <footer id="footer-con" class="grid-con">
+            <a href="index.html"><img src="img/logo.svg" alt="pet project logo"></a>
+            <nav id="footer-nav">
+            <h2 class="hidden">Lower Navigation</h2>
+                <ul>
+                    <li><a href="index_mobile.html">Home</a></li>
+                    <li><a href="gallery_mobile.html">Gallery</a></li>
+                </ul>
+            </nav>
         </footer>
 
     </div>
-</div>
 </body>
 </html>
