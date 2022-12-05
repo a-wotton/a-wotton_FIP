@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<!-- REMEMBER TO VALIDATE -->
+
 <body>
 	<div id="container">
         
@@ -20,6 +20,7 @@
             <header id="main-header" class="grid-con">
                 <a href="index.html"><img id="logo" src="img/logo.svg" alt="pet project logo"></a>
                 <nav id="main-nav">
+                <h2 class="hidden">Upper Navigation</h2>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
@@ -34,6 +35,7 @@
 
         <main>
             <section class="grid-con" id="hero">
+                <h2 class="hidden">Welcome Section</h2>
                 <article id="hero-text">
                     <h1 class="subtitle">Welcome to Pet Project!</h1>
                     <p>My name is Aiden, and this is a blog site that I created where I share images of my pets. I live with three dogs and a cat, which are shown below.</p>
@@ -44,23 +46,22 @@
             <section class="grid-con" id="animals">
                 <h2 class="subtitle-02">Featured Pets</h2>
                 <div class="pet-intro" id="dolly">
-                    <img class="fourimages" src="https://via.placeholder.com/536x242" alt="image">
+                    <img class="fourimages" src="img/dolly_turn.jpg" alt="dolly sitting and looking over her shoulder">
                     <h3>Dolly</h3>
                     <p>French Bulldog</p>
-
                 </div>
                 <div class="pet-intro" id="daisy">
-                    <img class="fourimages" src="https://via.placeholder.com/536x242" alt="image">
+                    <img class="fourimages" src="img/daisy_floor.jpg" alt="daisy standing on the floor">
                     <h3>Daisy</h3>
                     <p>French Bulldog</p>
                 </div>
                 <div class="pet-intro" id="percy">
-                    <img class="fourimages" src="https://via.placeholder.com/536x242" alt="image">
+                    <img class="fourimages" src="img/percy_laying.jpg" alt="percy laying in bed">
                     <h3>Percy</h3>
                     <p>Great Dane</p>
                 </div>
                 <div class="pet-intro" id="maggie">
-                    <img class="fourimages" src="https://via.placeholder.com/536x242" alt="image">
+                    <img class="fourimages" src="img/maggie_kitchen.jpg" alt="maggie in the kitchen">
                     <h3>Maggie</h3>
                     <p>Calico Shorthair</p>
                 </div>
@@ -68,6 +69,7 @@
 
             <h2 class="subtitle-02">About the Pets</h2>
             <section class="grid-con" id="about">
+                <h2 class="hidden">About Container</h2>
                <ul>
                 <li>
                     Dolly
@@ -75,21 +77,21 @@
                 </li>
                 <li>
                     Daisy
-                    <span>is our other French Bulldog, and she has a blue-grey fur. She is several years older than Dolly, and has had two litters of puppies, one in 2021, and another in 2022.</span>
+                    <span>is our other French Bulldog, and she has a blue-grey fur. She is around four years older than Dolly, and has had two litters of puppies, one in 2021, and another in 2022.</span>
                 </li>
                 <li>
                     Percy
-                    <span>Percy is our Great Dane, his fur is harlequin, which is white with black and grey spots, similar to a Dalmatian. He has been in the family for the longest, ever since 20XX.</span>
+                    <span>is our Great Dane, his fur is harlequin, which is white with black and grey spots, similar to a Dalmatian. He has been in the family for the longest, ever since 2014.</span>
                 </li>
                 <li>
                     Maggie
-                    <span>Maggie is our Calico cat, with white fur and spots of brown, grey and black.</span>
+                    <span>is our Calico cat, with white fur and spots of brown, grey and black. Maggie became a member of the family back in 2015.</span>
                 </li>
                </ul> 
                 <img src="img/four-images.png" alt="headshots of all four pets" id="four-images">
             </section>
         
-            <section class="grid-con" id="contact">
+            <div class="grid-con" id="contact">
                 <article id="contact-text">
                     <h2 class="subtitle">Contact</h2>
                     <p>Here you can contact me to provide any suggestions or report any issues that you may encounter.</p>
@@ -101,25 +103,22 @@
                     <textarea placeholder="Message" name="message" cols="30" rows="10"></textarea>
                     <input id="submit" type="submit">
                 </form>
-            </section> 
+            </div> 
         </main>
 
         <div id="footer-con">  
             <footer class="grid-con" id="footer">
                 <a href="index.html"><img id="footer-logo" src="img/logo.svg" alt="pet project logo"></a>
                 <nav id="footer-nav">
+                <h2 class="hidden">Lower Navigation</h2>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </nav>
-               <!-- <div id="footer-newsletter1" class="box-color">
-                </div>
-                <div id="footer-newsletter2" class="box-color">
-                </div>
-                <div id="footer-social" class="box-color">
                 </footer>
-            </div> -->
+            </div> 
+
         </div>
 </body>
 </html>

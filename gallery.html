@@ -2,30 +2,42 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Gallery</title> 
 <link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="https://kit.fontawesome.com/596fc36f7e.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<!-- students must convert divs to semantic tags -->
 <body>
 	<div id="container">
-        
-        <div id="header-con">
-            <div id="main-header" class="grid-con">
-                <div id="header-box1" class="box-color">
-                </div>
-                <div id="main-nav" class="box-color">
-                </div>
-                <div id="header-box2" class="box-color">
-                </div>
-            </div>
-        </div> 
 
+         <header id="main-header" class="grid-con">
+                <a href="index.html"><img id="logo" src="img/logo.svg" alt="pet project logo"></a>
+                <nav id="main-nav">
+                <h2 class="hidden">Upper Navigation</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </nav>
+                   <ul id="sm-icons">
+                        <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    </ul>
+            </header> 
         <main>
 
             <div id="gallery-hero-con">
                 <div class="grid-con">
-                    <div id="gallery-text" class="box-color">
-                    </div>
+                    <article id="gallery-text">
+                        <h2 class="subtitle">Welcome to the Gallery!</h2>
+                        <p>This gallery includes various images of each of the four featured pets, collected and displayed for your enjoyment. </p>
+                    </article>
                     <div id="gallery-controls">
                         <span class="dot"></span>
                         <span class="dot"></span>
@@ -34,70 +46,68 @@
                 </div>
             </div>
      
-            <div class="grid-con" id="gallery">
-                <h2>Blandit At Tuctor</h2>
+            <section class="grid-con" id="gallery">
+                <h2 class="subtitle">Gallery</h2>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/dolly_rope_bite.jpg" alt="dolly biting a rope toy" class="orange">
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/dolly_side.jpg" alt="dolly profile view" class="orange">
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/dolly_couch.jpg" alt="dolly standing on a couch" class="orange">
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/daisy_corner.jpg" alt="daisy sitting in the corner of a couch" class="blue">
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/daisy_snow.jpg" alt="daisy covered in snow" class="blue">
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/daisy_stretch.jpg" alt="daisy stretching" class="blue">
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/percy_flipped_ears.jpg" alt="percy with both ears flipped back" class="orange">
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/percy_rest.jpg" alt="percy laying on his leg" class="orange">
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/percy_curl.jpg" alt="percy curled up sleeping" class="orange">
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/maggie_grocery_bag.jpg" alt="maggie sitting inside a grocery bag" class="blue">
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/maggie_cover.jpg" alt="maggie covering her face with her paws" class="blue">
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/maggie_reach.jpg" alt="maggie stretching while laying down" class="blue">
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/maggie_staring.jpg" alt="maggie staring at daisy in the background" class="orange">
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/daisy_on_head.jpg" alt="daisy resting on percy's head" class="orange">
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                    <img src="img/dolly_lick_percy.jpg" alt="dolly trying to lick percy's face" class="orange">
                 </div>
-            </div>         
+            </section>         
         </main>
 
-        <div id="footer-con">
-            <div class="grid-con" id="footer">
-                <div id="footer-logo" class="box-color">
-                </div>
-                <div id="footer-nav" class="box-color">
-                </div>
-                <div id="footer-newsletter1" class="box-color">
-                </div>
-                <div id="footer-newsletter2" class="box-color">
-                </div>
-                <div id="footer-social" class="box-color">
-                </div>
-            </div>
-        </div>
+        <div id="footer-con">  
+            <footer class="grid-con" id="footer">
+                <a href="index.html"><img id="footer-logo" src="img/logo.svg" alt="pet project logo"></a>
+                <nav id="footer-nav">
+                <h2 class="hidden">Lower Navigation</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </nav>
+                </footer>
+            </div> 
 
     </div><!--end container-->  
 </body>

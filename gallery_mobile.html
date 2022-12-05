@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Web Page</title>
+<meta charset="UTF-8"> 
+<title>Gallery</title>
 <link href="css/main-mobile.css" rel="stylesheet" type="text/css">
+<script src="https://kit.fontawesome.com/596fc36f7e.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- students must convert divs to semantic tags -->
 	<div id="container">
         
-        <div id="header-con">
+        <header id="header-con">
             <div id="main-header" class="grid-con">
-                <img src="https://via.placeholder.com/186x80" alt="image" id="header-logo">
-                 <div id="mobile-nav">
+                <a href="index_mobile.html"><img src="img/logo.svg" alt="pet project logo" id="header-logo"></a>
+                 <nav id="mobile-nav">
+                <h2 class="hidden">Upper Navigation</h2>
                     <span class="burger"></span>
                     <span class="burger"></span>
                     <span class="burger"></span>
-                 </div>
-            </div>    
-        </div> 
+                 </nav>
+                </div>    
+        </header> 
 
         <main>
             <div id="hero-gallery-con">
                 <div class="grid-con">
-                    <div id="hero-gallery-text" class="box-color">
-                    </div>
+                    <article id="gallery-text">
+                            <h2 class="subtitle">Welcome to the Gallery!</h2>
+                            <p>This gallery includes various images of each of the four featured pets, collected and displayed for your enjoyment. </p>
+                    </article>
                     <div id="gallery-controls">
                         <span class="dot"></span>
                         <span class="dot"></span>
@@ -33,39 +42,29 @@
                 </div>
             </div>
 
-            <div class="grid-con" id="gallery">
-                <h2>Blandit At Tuctor</h2>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-            </div>              
+            <section id="gallery" class="grid-con">
+                <h2 class="subtitle">Gallery</h2>
+                    <img src="img/dolly_rope_bite_mobile.jpg" alt="dolly biting a rope toy">
+                    <img src="img/daisy_corner_mobile.jpg" alt="daisy sitting in the corner of a couch">
+                    <img src="img/percy_flipped_ears_mobile.jpg" alt="percy with both ears flipped back">
+                    <img src="img/maggie_grocery_bag_mobile.jpg" alt="maggie sitting inside a grocery bag">
+                    <img src="img/maggie_staring_mobile.jpg" alt="maggie staring at daisy in the background">
+                    <img src="img/daisy_on_head_mobile.jpg" alt="daisy resting on percy's head">     
+            </section>       
         </main>
 
-        <div id="footer-con">
-            <div class="grid-con">
-                <div id="footer-box">
-                </div>
-                <div id="footer-newsletter">
-                </div>
-                <div id="footer-newsletter2">
-                </div>
-            </div>
-        </div>
+     
+        <footer id="footer-con" class="grid-con">
+            <a href="index.html"><img src="img/logo.svg" alt="pet project logo"></a>
+            <nav id="footer-nav">
+            <h2 class="hidden">Lower Navigation</h2>
+                <ul>
+                    <li><a href="index_mobile.html">Home</a></li>
+                    <li><a href="gallery_mobile.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </footer>
+
     </div> 
 </body>
 </html>
